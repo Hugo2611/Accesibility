@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MotoGP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form id="contact-form">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" required>
+
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" required>
+
+            <fieldset>
+                <legend>Adresse</legend>
+                <label for="numero-rue">N° et Rue</label>
+                <input type="text" id="numero-rue">
+
+                <label for="code-postal">Code Postal</label>
+                <input type="text" id="code-postal">
+
+                <label for="ville">Ville</label>
+                <input type="text" id="ville">
+            </fieldset>
+
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone">
+
+            <button type="submit">Valider</button>
+        </form>
+
+        <p id="message" class="hidden"></p>
+    </main>
+
+    <footer>
+        <p>Plan du site : </p>
+        <a href="index.html">Accueil</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="contact.html">Contact</a>
+    </footer>
+</body>
+</html>
