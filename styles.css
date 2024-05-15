@@ -64,3 +64,98 @@ footer {
 .error {
     color: red;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1D1E1C;
+    color: white;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+header {
+    background-color: #1D1E1C;
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #E71E0E;
+}
+
+main {
+    padding: 20px;
+}
+
+.team {
+    margin-bottom: 40px;
+}
+
+.constructor-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.pilot {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pilot-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    color: #E71E0E;
+}
+
