@@ -1,7 +1,7 @@
 /* Color Palette */
 :root {
-    --primary-color: #000000;
-    --secondary-color: #5CDBB4;
+    --primary-color: #0c075a;
+    --secondary-color: #fefefe;
     --dark-color: #333;
   }
   
@@ -23,9 +23,12 @@
   a {
     color: var(--primary-color);
     text-decoration: none;
+    border-radius: 40%;
+    padding: 0.7%;
   }
   
   a:hover {
+    background-color: var(--primary-color);
     color: var(--secondary-color);
   }
   
@@ -116,10 +119,49 @@
     outline: none;
     box-shadow: 0 0 5px var(--primary-color);
   }
+
+  #contactForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Titre du formulaire */
+#formTitle {
+    margin-top: 0;
+}
+
+/* Styles des champs de saisie et des labels */
+input[type="text"],
+input[type="téléphone"],
+button[type="submit"] {
+    width: calc(100% - 20px); /* Largeur avec marge */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /*Inclure le padding et la bordure dans la largeur */
+}
+
+/* Message d'erreur */
+div[role="alert"] {
+    color: #aa0000;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+ /* Bouton de soumission */
+button[type="submit"] {
+    background-color: #0055af;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
   
   /* Footer Styles */
   footer {
-    background-color: var(--dark-color);
     text-align: center;
     padding: 10px;
   }

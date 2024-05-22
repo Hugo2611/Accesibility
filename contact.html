@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MotoGP</title>
+    <title>MotoGP | Contact</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
@@ -24,31 +24,30 @@
 
     <main>
         <form id="contact-form">
-            <label for="nom">Nom *</label>
-            <input type="text" id="nom" required>
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" required aria-required="true" minlength="2" maxlength="50" aria-invalid="false">
 
-            <label for="prenom">Prénom *</label>
-            <input type="text" id="prenom" required>
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" required aria-required="true" minlength="2" maxlength="50" aria-invalid="false">
 
             <fieldset>
                 <legend>Adresse</legend>
-                <label for="numero-rue">N° et Rue</label>
-                <input type="text" id="numero-rue">
+                <label for="numero_rue">N° et Rue</label>
+                <input type="text" id="numero_rue" required aria-required="true" minlength="1" maxlength="10" aria-invalid="false">
 
-                <label for="code-postal">Code Postal</label>
-                <input type="text" id="code-postal">
+                <label for="code_postal">Code Postal</label>
+                <input type="text" id="code_postal" required aria-required="true" minlength="5" maxlength="10" aria-invalid="false">
 
                 <label for="ville">Ville</label>
-                <input type="text" id="ville">
+                <input type="text" id="ville" required aria-required="true" minlength="2" maxlength="100" aria-invalid="false">
             </fieldset>
 
-            <label for="telephone">Téléphone</label>
-            <input type="tel" id="telephone">
+            <label for="téléphone">Téléphone</label>
+            <input type="téléphone" id="téléphone" required aria-required="true" aria-invalid="false">
 
-            <button type="submit">Valider</button>
+            <button type="submit">Envoyer</button>
         </form>
 
-        <p id="message" class="hidden"></p>
     </main>
 
     <footer>
