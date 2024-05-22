@@ -3,213 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoGP | Équipes</title>
+    <title>MotoGP - equipes</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team {
+            background-color: #fefefe;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            width: calc(30% - 40px);
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .constructor-image {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .pilot {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .pilot-image {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo" id="logo">
-        <h1>Écuries MotoGP</h1>
+        <img src="img/logo.png" alt="Logo du Moto GP" id="logo">
+        <h1>Les équipes</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="equipes.html">Team</a></li>
+            <li><a href="equipes.html">Écuries</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <main>
-        <div class="search-bar">
-            <input type="text" title="Saisissez un mot clé à rechercher">
-            <input type="submit" value="Rechercher" title="Rechercher dans le site">
-        </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher..." class="search-input">
+        <button class="search-button">Rechercher</button>
+    </div>
 
+    <main>
         <section class="team">
             <h2>Aprilia Racing Team</h2>
-            <img src="aprilia.png" alt="une moto aprilia" class="constructor-image">
+            <img src="img/aprilia.png" alt="une moto aprilia" class="constructor-image">
             <p><strong>Pays:</strong> Italie</p>
             <p><strong>Moto:</strong> Aprilia RS-GP</p>
 
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="maverick-vinales.png" alt="photo de Maverick Viñales" class="pilot-image">
+                <img src="img/maverick-vinales.png" alt="photo de Maverick Viñales" class="pilot-image">
                 <p><strong>12 - Maverick Viñales</strong></p>
             </div>
             <div class="pilot">
-                <img src="aleix-espargaro.png" alt="photo d'Aleix Espargaró" class="pilot-image">
+                <img src="img/aleix-espargaro.png" alt="photo d'Aleix Espargaró" class="pilot-image">
                 <p><strong>41 - Aleix Espargaró</strong></p>
             </div>
         </section>
 
         <section class="team">
             <h2>Ducati Team</h2>
-            <img src="ducati.png" alt="une moto Ducati" class="constructor-image">
+            <img src="img/ducati.png" alt="une moto Ducati" class="constructor-image">
             <p><strong>Pays:</strong> Italie</p>
             <p><strong>Moto:</strong> Ducati Desmosedici GP24</p>
 
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="pecco-bagnaia.png" alt="Photo de Pecco Bagnaia" class="pilot-image">
+                <img src="img/pecco-bagnaia.png" alt="Photo de Pecco Bagnaia" class="pilot-image">
                 <p><strong>1 - Pecco Bagnaia</strong></p>
             </div>
             <div class="pilot">
-                <img src="enea-bastianini.png" alt="Photo d'Enea Bastianini" class="pilot-image">
+                <img src="img/enea-bastianini.png" alt="Photo d'Enea Bastianini" class="pilot-image">
                 <p><strong>23 - Enea Bastianini</strong></p>
             </div>
         </section>
 
         <section class="team">
             <h2>Gresini Racing</h2>
-            <img src="gresini.png" alt="une moto ducati aux couleurs de l'équipe Gresini" class="constructor-image">
+            <img src="img/gresini.png" alt="une moto ducati aux couleurs de l'équipe Gresini" class="constructor-image">
             <p><strong>Pays:</strong> Italie</p>
             <p><strong>Moto:</strong> Ducati Desmosedici GP23</p>
 
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="alex-marquez.png" alt="Photo d'Alex Marquez" class="pilot-image">
+                <img src="img/alex-marquez.png" alt="Photo d'Alex Marquez" class="pilot-image">
                 <p><strong>73 - Álex Márquez</strong></p>
             </div>
             <div class="pilot">
-                <img src="marc-marquez.png" alt="Photo de Marc Marquez" class="pilot-image">
+                <img src="img/marc-marquez.png" alt="Photo de Marc Marquez" class="pilot-image">
                 <p><strong>93 - Marc Márquez</strong></p>
             </div>
         </section>
 
         <section class="team">
             <h2>Pramac Racing</h2>
-            <img src="pramac.png" alt="Une moto ducati aux couleurs de l'équipe Pramac" class="constructor-image">
+            <img src="img/pramac.png" alt="Une moto ducati aux couleurs de l'équipe Pramac" class="constructor-image">
             <p><strong>Pays:</strong> Italie</p>
             <p><strong>Moto:</strong> Ducati Desmosedici GP24</p>
 
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="franco-morbidelli.png" alt="Photo de Franco Morbidelli" class="pilot-image">
+                <img src="img/franco-morbidelli.png" alt="Photo de Franco Morbidelli" class="pilot-image">
                 <p><strong>21 - Franco Morbidelli</strong></p>
             </div>
             <div class="pilot">
-                <img src="jorge-martin.png" alt="Photo de Jorge Martín" class="pilot-image">
+                <img src="img/jorge-martin.png" alt="Photo de Jorge Martín" class="pilot-image">
                 <p><strong>89 - Jorge Martín</strong></p>
             </div>
         </section>
 
         <section class="team">
             <h2>Red Bull KTM Factory Racing</h2>
-            <img src="redbull-ktm.png" alt="Une moto KTM aux couleurs de Red Bull KTM" class="constructor-image">
+            <img src="img/redbull-ktm.png" alt="Une moto KTM aux couleurs de Red Bull KTM" class="constructor-image">
             <p><strong>Pays:</strong> Autriche</p>
             <p><strong>Moto:</strong> KTM RC16</p>
 
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="brad-binder.png" alt="Photo de Brad Binder" class="pilot-image">
+                <img src="img/brad-binder.png" alt="Photo de Brad Binder" class="pilot-image">
                 <p><strong>33 - Brad Binder</strong></p>
             </div>
             <div class="pilot">
-                <img src="jack-miller.png" alt="Photo de Jack Miller" class="pilot-image">
+                <img src="img/jack-miller.png" alt="Photo de Jack Miller" class="pilot-image">
                 <p><strong>43 - Jack Miller</strong></p>
             </div>
         </section>
 
         <section class="team">
             <h2>Repsol Honda Team</h2>
-            <img src="repsol-honda.png" alt="Une moto Honda aux couleurs de Repsol Honda" class="constructor-image">
+            <img src="img/repsol-honda.png" alt="Une moto Honda aux couleurs de Repsol Honda" class="constructor-image">
             <p><strong>Pays:</strong> Japon</p>
             <p><strong>Moto:</strong> Honda RC213V</p>
 
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="luca-marini.png" alt="Photo de Luca Marini" class="pilot-image">
+                <img src="img/luca-marini.png" alt="Photo de Luca Marini" class="pilot-image">
                 <p><strong>10 - Luca Marini</strong></p>
             </div>
             <div class="pilot">
-                <img src="joan-mir.png" alt="photo de Joan Mir" class="pilot-image">
+                <img src="img/joan-mir.png" alt="photo de Joan Mir" class="pilot-image">
                 <p><strong>36 - Joan Mir</strong></p>
             </div>
         </section>
 
         <section class="team">
             <h2>LCR Honda</h2>
-            <img src="lcr-honda.png" alt="Une moto Honda aux couleurs de LCR Honda" class="constructor-image">
+            <img src="img/lcr-honda.png" alt="Une moto Honda aux couleurs de LCR Honda" class="constructor-image">
             <p><strong>Pays:</strong> Monaco</p>
             <p><strong>Moto:</strong> Honda RC213V</p>
-
+        
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="johann-zarco.png" alt="Photo de Johann Zarco" class="pilot-image">
+                <img src="img/johann-zarco.png" alt="Photo de Johann Zarco" class="pilot-image">
                 <p><strong>5 - Johann Zarco</strong></p>
             </div>
             <div class="pilot">
-                <img src="takaaki-nakagami.png" alt="Photo de Takaaki Nakagami" class="pilot-image">
+                <img src="img/takaaki-nakagami.png" alt="Photo de Takaaki Nakagami" class="pilot-image">
                 <p><strong>30 - Takaaki Nakagami</strong></p>
             </div>
         </section>
-
+        
         <section class="team">
             <h2>VR46 Racing Team</h2>
-            <img src="vr46.png" alt="Une moto Ducati aux couleurs VR46" class="constructor-image">
+            <img src="img/vr46.png" alt="Une moto Ducati aux couleurs VR46" class="constructor-image">
             <p><strong>Pays:</strong> Italie</p>
             <p><strong>Moto:</strong> Ducati Desmosedici GP23</p>
-
+        
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="fabio-di-giannantonio.png" alt="Photo de Fabio Di Giannantonio" class="pilot-image">
+                <img src="img/fabio-di-giannantonio.png" alt="Photo de Fabio Di Giannantonio" class="pilot-image">
                 <p><strong>49 - Fabio Di Giannantonio</strong></p>
             </div>
             <div class="pilot">
-                <img src="marco-bezzecchi.png" alt="Photo de Marco Bezzecchi" class="pilot-image">
+                <img src="img/marco-bezzecchi.png" alt="Photo de Marco Bezzecchi" class="pilot-image">
                 <p><strong>72 - Marco Bezzecchi</strong></p>
             </div>
         </section>
-
+        
         <section class="team">
             <h2>Red Bull GASGAS Tech3</h2>
-            <img src="redbull-gasgas.png" alt="Une moto KTM aux couleurs Red Bull GASGAS" class="constructor-image">
+            <img src="img/redbull-gasgas.png" alt="Une moto KTM aux couleurs Red Bull GASGAS" class="constructor-image">
             <p><strong>Pays:</strong> France</p>
             <p><strong>Moto:</strong> KTM RC16</p>
-
+        
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="pedro-acosta.png" alt="Photo de Pedro Acosta" class="pilot-image">
+                <img src="img/pedro-acosta.png" alt="Photo de Pedro Acosta" class="pilot-image">
                 <p><strong>31 - Pedro Acosta</strong></p>
             </div>
             <div class="pilot">
-                <img src="augusto-fernandez.png" alt="Photo d'Augusto Fernández" class="pilot-image">
+                <img src="img/augusto-fernandez.png" alt="Photo d'Augusto Fernández" class="pilot-image">
                 <p><strong>37 - Augusto Fernández</strong></p>
             </div>
         </section>
-
+        
         <section class="team">
             <h2>Trackhouse Racing</h2>
-            <img src="trackhouse.png" alt="Une moto Aprillia aux couleurs Trackhouse" class="constructor-image">
+            <img src="img/trackhouse.png" alt="Une moto Aprillia aux couleurs Trackhouse" class="constructor-image">
             <p><strong>Pays:</strong> États-Unis</p>
             <p><strong>Moto:</strong> Aprilia RS-GP</p>
-
+        
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="raul-fernandez.png" alt="Photo de Raúl Fernández" class="pilot-image">
+                <img src="img/raul-fernandez.png" alt="Photo de Raúl Fernández" class="pilot-image">
                 <p><strong>25 - Raúl Fernández</strong></p>
             </div>
             <div class="pilot">
-                <img src="miguel-oliveira.png" alt="Photo de Miguel Oliveira" class="pilot-image">
+                <img src="img/miguel-oliveira.png" alt="Photo de Miguel Oliveira" class="pilot-image">
                 <p><strong>88 - Miguel Oliveira</strong></p>
             </div>
         </section>
-
+        
         <section class="team">
             <h2>Yamaha Factory Racing</h2>
-            <img src="yamaha.png" alt="Une moto Yamaha" class="constructor-image">
+            <img src="img/yamaha.png" alt="Une moto Yamaha" class="constructor-image">
             <p><strong>Pays:</strong> Japon</p>
             <p><strong>Moto:</strong> Yamaha YZR-M1</p>
-
+        
             <h3>Pilotes</h3>
             <div class="pilot">
-                <img src="fabio-quartararo.png" alt="Photo de Fabio Quartararo" class="pilot-image">
+                <img src="img/fabio-quartararo.png" alt="Photo de Fabio Quartararo" class="pilot-image">
                 <p><strong>20 - Fabio Quartararo</strong></p>
             </div>
             <div class="pilot">
-                <img src="alex-rins.png" alt="Photo de Alex Rins" class="pilot-image">
+                <img src="img/alex-rins.png" alt="Photo de Alex Rins" class="pilot-image">
                 <p><strong>42 - Álex Rins</strong></p>
             </div>
         </section>
@@ -223,4 +267,4 @@
         <a href="contact.html">Contact</a>
     </footer>
 </body>
-</html>
+</html>        

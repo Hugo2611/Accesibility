@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoGP | Accueil</title>
+    <title>MotoGP - Accueil</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo" id="logo">
+        <img src="img/logo.png" alt="Logo du Moto GP" id="logo">
         <h1>Bienvenue sur le site MotoGP !</h1>
     </header>
 
@@ -16,30 +16,61 @@
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="equipes.html">Team</a></li>
+            <li><a href="equipes.html">Équipes</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
+    <div class="search-bar">
+        <input type="text" placeholder="Rechercher..." class="search-input">
+        <button class="search-button">Rechercher</button>
+    </div>
+
     <main>
-        <section>
-            <h2>Dernières actualités</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras porttitor metus justo, ut ullamcorper velit interdum et.</p>
-            <a href="#">Lire la suite</a>
+        <section class="last-race">
+            <h2>Dernière course</h2>
+            <h3>Grand Prix de France</h3>
+            <p class="race-details">Date: Dim. 12 Mai, 14:00</p>
+            <p class="race-details">Circuit: Circuit Bugatti</p>
+            <h4>Résultats des pilotes</h4>
+            <ul class="pilots-list">
+                <li>
+                    <span class="position">1</span>
+                    <img src="img/spain.png" alt="Drapeau espagnol" class="flag">
+                    J. Martin
+                    #89
+                    <img src="img/italia.png" alt="Logo Ducati Pramac" class="constructor">
+                    Ducati
+                    <span class="time"> //  0:41:23.709 // </span>
+                    <span class="points">37 pts</span>
+                </li>
+                <!-- Ajoutez les autres éléments de la liste pour les autres pilotes (4 éléments supplémentaires) -->
+            </ul>
+            <h4>Résultats des constructeurs</h4>
+            <ul class="constructors-list">
+                <li>
+                    <span class="position">1</span>
+                    <img src="img/ducati.png" alt="Logo Ducati" class="constructor">
+                    Ducati
+                    <span class="points">96 pts</span>
+                </li>
+                <!-- Ajoutez les autres éléments de la liste pour les autres constructeurs (4 éléments supplémentaires) -->
+            </ul>
         </section>
 
-        <aside>
-            <h3>Recherche</h3>
-            <input type="text" title="Saisissez un mot clé à rechercher">
-            <input type="submit" value="Rechercher" title="Rechercher dans le site">
-        </aside>
+        <section class="next-race">
+            <h2>Prochain Grand Prix</h2>
+            <h3>GP de Catalogne</h3>
+            <p class="race-details">Date: Dim. 26 Mai, 14:00</p>
+            <p class="race-details">Circuit: Circuit de Barcelona-Catalunya</p>
+        </section>
     </main>
 
     <footer>
         <p>Plan du site : </p>
         <a href="index.html">Accueil</a> |
         <a href="blog.html">Blog</a> |
-        <a href="equipes.html">Écuries</a> |
+        <a href="equipes.html">Team</a> |
         <a href="contact.html">Contact</a>
     </footer>
 </body>
